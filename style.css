@@ -7,6 +7,7 @@
 
 body {
     background: #efeee5;
+    padding: 10px;
 }
 
 /* -------main section------- */
@@ -19,6 +20,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 .main-btns {
@@ -145,6 +147,7 @@ body {
     margin-bottom: 50px;
     background-color: #ece6e0;
     padding: 50px 0px;
+    border-radius: 15px;
 }
 
 .brand-left,
@@ -222,6 +225,7 @@ body {
     height: 600px;
     display: flex;
     flex-direction: column;
+    border-radius: 15px;
 }
 
 .slider-wrraper-arrow {
@@ -425,6 +429,58 @@ body {
     list-style: none;
     color: rgb(148, 148, 148);
 }
+/* ------book call section------ */
+.book-call-section{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0% auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+    background: radial-gradient(circle, #1298af, #04343d);
+}
+.book-call-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.book-call-left{
+    width: 40%;
+}
+ .book-call-right{
+    width: 60%;
+    color: white;
+}
+.book-call-right-content{
+    width: 700px;
+}
+.book-call-right-content h1{
+    font-size: 45px;
+}
+.book-call-right-content p{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+.book-call-btn{
+    padding: 15px 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black;
+    font-weight: 600;
+}
+
 
 /* -----testimonial section------ */
 .testimonial-section {
@@ -622,7 +678,8 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    padding: 50px 0px;
+    padding: 50px 20px;
+    border-radius: 15px;
 }
 
 .calender-container {
@@ -630,6 +687,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px 40px;
 }
 
 .calender-left,
@@ -643,7 +701,7 @@ body {
 }
 
 .calender-left h2 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     margin: 0px 0px 20px 0px;
 }
@@ -661,8 +719,8 @@ body {
 
 .calender-right,
 .calender-box {
-    width: 60%;
-    height: 400px;
+    width: 50%;
+    height: 600px;
     background-color: white;
     border-radius: 20px;
 }
