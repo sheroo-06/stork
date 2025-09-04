@@ -1,6 +1,5 @@
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const slides = document.querySelectorAll(".slider-wrraper-content"); // <-- yahan spelling sahi
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".slider-wrraper-content");
     const prevBtn = document.querySelector(".left-arrow");
     const nextBtn = document.querySelector(".right-arrow");
 
@@ -8,19 +7,21 @@
 
     function showSlide(index) {
       slides.forEach((slide, i) => {
-        slide.style.display = i === index ? "flex" : "none";
+        slide.classList.remove("active");
       });
+      slides[index].classList.add("active");
     }
 
-
+    // Show first slide initially
     showSlide(currentIndex);
 
-
+    // Next button
     nextBtn.addEventListener("click", () => {
       currentIndex = (currentIndex + 1) % slides.length;
       showSlide(currentIndex);
     });
 
+    // Prev button
     prevBtn.addEventListener("click", () => {
       currentIndex = (currentIndex - 1 + slides.length) % slides.length;
       showSlide(currentIndex);
