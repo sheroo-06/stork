@@ -133,14 +133,14 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     position: relative;   
 }
 .logo-slide-track-left{
-    animation: scrolling-left 30s linear infinite;
+    animation: scrolling-left 20s linear infinite;
 }
 .logo-slide-track-right{
-    animation: scrolling-right 30s linear infinite;
+    animation: scrolling-right 20s linear infinite;
 }
 
 @keyframes scrolling-left{
@@ -161,7 +161,7 @@ body {
 }
 .logo-slide-track-left img, .logo-slide-track-right img{
     width: 100px;
-    height: 50px;
+    height: 40px;
 }
 
 /* ----quote section----  */
@@ -273,7 +273,7 @@ body {
     width: 100%;
     max-width: 1600px;
     margin: 0% auto;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -386,7 +386,7 @@ body {
     color: rgb(148, 148, 148);
 }
 
-.bottom-boxes {
+.slider-bottom-boxes {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -394,29 +394,23 @@ body {
     gap: 10px;
 }
 
-.box1,
-.box2,
-.box3 {
+.box {
     background: #efeee5;
     padding: 20px;
     border-radius: 20px;
     width: 33%;
-    height: 150px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
     gap: 30px;
 }
 
-.box1 h3,
-.box2 h3,
-.box3 h3 {
+.box h3 {
     font-size: 20px;
 }
 
-.box1 h1,
-.box2 h1,
-.box3 h1 {
+.box h1{
     font-size: 50px;
     font-weight: 600;
 }
@@ -460,7 +454,7 @@ body {
     padding: 20px;
     border-radius: 20px;
     width: 25%;
-    height: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -468,7 +462,7 @@ body {
 }
 
 .choose-box h3 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .choose-box ul {
@@ -507,18 +501,25 @@ body {
  .book-call-right{
     width: 60%;
     color: white;
+    padding: 10px;
 }
 .book-call-right-content{
-    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 600px;
 }
 .book-call-right-content h1{
-    font-size: 45px;
+    font-size: 40px;
 }
 .book-call-right-content p{
     font-size: 16px;
     margin: 10px 0px;
+    
 }
 .book-call-btn{
+    display: inline-block;
+    width: 400px;
     padding: 15px 20px;
     margin-top: 40px;
     font-size: 20px;
@@ -873,4 +874,185 @@ body {
   flex-wrap: wrap;
   color: white;
   font-weight: 100;
+}
+
+/* ----------- Responsive Styles ----------- */
+@media screen and (max-width: 900px) {
+    .main-btns{
+        margin: 10px;
+    }
+    .main-btns button{
+        font-size: 14px;
+    }
+    .main-text{
+        width: 100%;
+    }
+    .main-text h1{
+        font-size: 30px;
+    }
+    .main-text p{
+        font-size: 14px;
+    }
+    .ceo-img{
+        flex-direction: column;
+    }
+    .main-bottom-btn button a{
+        font-size: 14px;
+    }
+    .quote-heading {
+        width: 100%;
+    }
+    .quote h1{
+        font-size: 30px;
+    }
+    .brand-agency-section{
+        flex-direction: column;
+    }
+    .brand-left, .agency-right{
+        width: 100%;
+        margin: 0;
+    }
+    .slider-wrraper-arrow{
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        gap: 10px;
+    }
+    .slider-text h2{
+        font-size: 25px;
+    }
+    .slider-text p{
+        font-size: 14px;
+    }
+    .slider-wrraper-content{
+        flex-direction: column;
+    }
+    .slider-image, .slider-content-boxes{
+        width: 100%;
+    }
+    .slider-bottom-boxes{
+        flex-direction: column;
+    }
+
+    .slider-image img{
+        width: 100%;
+        height: 180px;
+    }
+    .box{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .slider-top-box h3, .box h3{
+        font-size: 18px;
+    }
+    .slider-top-box p, .box p{
+        font-size: 12px;
+        line-height: 1;
+    }
+    .box h1{
+        font-size: 20px;
+    }
+    .choose-heading{
+        width: 100%;
+    }
+    .choose-heading h1{
+        font-size: 30px;
+    }
+    .choose-blocks{
+        flex-direction: column;
+    }
+    .choose-box{
+        width: 100%;
+    }
+    .choose-blocks h3{
+        font-size: 20px;
+    }
+    .book-call-container{
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+    }
+    .book-call-left, .book-call-right{
+        width: 100%;
+    }
+    .book-call-right-content{
+        width: 100%;
+        padding: 20px;
+    }
+    .book-call-right-content h1{
+        font-size: 40px;
+    }
+    .book-call-right-content p{
+        font-size: 16px;
+    }
+    .book-call-btn{
+        font-size: 16px;
+        width: 100%;
+    }
+    .testimonial-ceo-img{
+        flex-direction: column;
+    }
+    .testimonial-heading{
+        width: 100%;
+    }
+    .testimonial-heading h1{
+        font-size: 30px;
+    }
+    .process-heading{
+        width: 100%;
+    }
+    .process-heading h1{
+        font-size: 30px;
+    }
+    .process-top-blocks, .process-bottom-blocks{
+        flex-direction: column;
+    }
+    .process-top-block, .process-bottom-left-block, .process-bottom-right-block{
+        width: 100%;
+    }
+    .calender-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .calender-left, .calender-right{
+        width: 100%;
+        margin: 0;
+    }
+    .footer-container, .footer-columns{
+        flex-direction: column;
+    }
+    .footer-brand, .footer-col, .footer-bottom{
+        width: 100%;
+        margin: 0;
+    }
+    .footer-brand{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-brand h2, .footer-col h3{
+        font-size: 20px;
+    }
+    .footer-brand p{
+        text-align: center;
+    }
+    .footer-call-btn{
+        font-size: 16px;
+    }
+    .footer-columns{
+        padding-left: 20px;
+        gap: 20px;
+    }
+    .footer-col ul li a{
+        font-size: 14px;
+    }
+    .footer-bottom{
+        gap: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
