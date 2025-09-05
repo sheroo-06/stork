@@ -1,32 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const slides = document.querySelectorAll(".slider-wrraper-content");
-    const prevBtn = document.querySelector(".left-arrow");
-    const nextBtn = document.querySelector(".right-arrow");
+  const slides = document.querySelectorAll(".slider-wrraper-content");
 
-    let currentIndex = 0;
+  // select ALL prev/next buttons (desktop + mobile)
+  const prevBtns = document.querySelectorAll(".left-arrow");
+  const nextBtns = document.querySelectorAll(".right-arrow");
 
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove("active");
-      });
-      slides[index].classList.add("active");
-    }
+  let currentIndex = 0;
 
-    // Show first slide initially
-    showSlide(currentIndex);
+  function showSlide(index) {
+    slides.forEach((slide) => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+  }
 
-    // Next button
-    nextBtn.addEventListener("click", () => {
-      currentIndex = (currentIndex + 1) % slides.length;
-      showSlide(currentIndex);
-    });
+  // Show first slide initially
+  showSlide(currentIndex);
 
-    // Prev button
-    prevBtn.addEventListener("click", () => {
+  // Loop through all prev buttons
+  prevBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
       currentIndex = (currentIndex - 1 + slides.length) % slides.length;
       showSlide(currentIndex);
     });
   });
+
+  nextBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    });
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     let splide = new Splide('#testimonial-slider', {

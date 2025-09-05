@@ -334,7 +334,9 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
+.m-btn{
+    display: none;
+}
 .slider-text {
     display: flex;
     flex-direction: column;
@@ -998,6 +1000,27 @@ body {
         margin: 0;
         gap: 10px;
     }
+    
+    .d-btn {
+        display: none;
+    }
+
+    .slider-wrraper {
+        position: relative;
+        height: 900px;
+    }
+
+    .m-btn {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        display: flex;
+        gap: 5px;
+        display: block;
+        padding: 10px;
+
+    }
+
     .slider-wrraper-content {
         flex-direction: column;
         transform: none ;
