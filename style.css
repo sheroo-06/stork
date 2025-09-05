@@ -444,11 +444,11 @@ body {
 }
 
 .box h3 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .box h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
 }
 
@@ -538,6 +538,12 @@ body {
 .book-call-left {
     width: 40%;
 }
+.book-call-left img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    padding: 10px;
+}
 
 .book-call-right {
     width: 60%;
@@ -563,9 +569,8 @@ body {
 }
 
 .book-call-btn {
-    display: inline-block;
-    width: 150px;
     padding: 15px 20px;
+    width: 350px;
     margin-top: 40px;
     font-size: 20px;
     border: none;
@@ -814,11 +819,16 @@ body {
     list-style: none;
 }
 
-.calender-right,
+.calender-right
 .calender-box {
-    width: 50%;
-    height: 600px;
+    width: 100%;
+    height: 300px;
     background-color: white;
+    border-radius: 20px;
+}
+.calender-box img{
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -1007,7 +1017,7 @@ body {
 
     .slider-wrraper {
         position: relative;
-        height: 900px;
+        height: 950px;
     }
 
     .m-btn {
